@@ -16,5 +16,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 <body class="w3-sand">
+  Hi
 </body>
 </html>
