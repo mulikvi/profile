@@ -1,224 +1,424 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-sand">
+<html lang="en">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<head>
+  <title>Vishakha Mulik</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <script src="https://kit.fontawesome.com/ee9f3903cb.js" crossorigin="anonymous"></script>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
-    <p>Photographer and Web Designer.</p>
-    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-third img:hover {
+      opacity: 1
+    }
+  
+  </style>
+</head>
+
+<body class="w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+    style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>Vishakha Mulik</b>
+      <font size=2><br>Without data,all we have is an opinion</font>
+    </h3>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding  w3-hide-large">CLOSE</a>
+    <a href="#about" onclick="w3_close()" class=" w3-bar-item w3-button">
+      <font size=2>ABOUT ME</font>
+    </a>
+    <a href="#academics" onclick="w3_close()" class="w3-bar-item w3-button">
+      <font size=2>ACADEMICS</font>
+    </a>
+    <a href="#intern" onclick="w3_close()" class="w3-bar-item w3-button">
+      <font size=2>INTERNSHIPS & ORGANIZATIONS</font>
+    </a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">
+      <font size=2>SKILLS</font>
+    </a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">
+      <font size=2>PROJECTS</font>
+    </a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">
+      <font size=2>GET IN TOUCH</font>
+    </a>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding">Vishakha Mulik</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+
+    <!-- About section -->
+    <div class="w3-container w3-dark-gray w3-center w3-text-light-grey w3-padding-64" id="about">
+      <img src="photo.png" alt="Me" class="w3-image w3-padding-32" width="170" height="180">
+      <div class="w3-content w3-justify" style="max-width:830px; text-align:left">
+
+        <p>While interning in 2018, coming across the term 'Business Intelligence’ made me realize that data is the new
+          language of business. I believe organizations with more data-literate people are the ones that are going to
+          succeed. Recently, listening to a TEDx talk titled ‘Relationship: Analytics and Business’ got me interested in
+          how the terms Business, Analytics, and Data are related. I am aware of the increasing usage of data and
+          analytics which will drive the future and an increasing amount of data requires smart techniques for storage.
+          There are many real-life problems that can be solved using techniques in the areas of Machine Learning,
+          Analytics, and Data. I wish to deepen my knowledge in Data Analytics, Engineering, Management and Machine
+          Learning. Along with that, I want to use my previous experience in Business Intelligence for solving business
+          and real-life problems.
+        </p>
+
+
+
+
+        <div class="w3-row-padding w3-dark-gray" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom w3-dark-gray">
+          </div>
+
+
+        </div>
       </div>
     </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
+
+
+
+
+
+    <!-- Academics -->
+    <div class="w3-container w3-light-gray w3-center w3-text-dark-gray w3-padding-64" align="left" id="academics">
+
+      <style>
+        ul {
+          list-style-type: none;
+          text-align: left;
+        }
+      </style>
+
+      <ul align="left">
+        <li><b>
+            <font size=4>MASTER OF COMPUTER SCIENCE (MCS)</font>
+          </b></li>
+        <font size=2 align="left">University of California-Irvine,Dec 2024</font><br>
+        <font size=2><b><u>Coursework:</u></b><br>
+          Big Data Management(CSCI 224P), Artificial Intelligence(CSCI 271P) ,
+          <br>Advanced Programming and Problem Solving(CSCI 253P)
+        </font>
+
+
+        <li><b><br><br><br>
+            <font size=4>BACHELOR OF ENGINEERING (BE),COMPUTERS</font>
+          </b></li>
+        <font size=2>University of Pune,June 2019 (Department Topper)</font><br>
+        <font size=2><b>GPA:</b> 9.12/10</font><br>
+
+        <font size=2><b><u>Coursework:</u></b><br>
+          Artificial Intelligence & Robotics, Business Intelligence, <br>Data Analytics, Database Management
+          Systems,<br> Data Mining and Warehousing, Data Structures & Algorithms, <br>Machine Learning, Object Oriented
+          Programming<br></font>
+      </ul>
     </div>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
+    <div class="w3-container w3-light-grey w3-center w3-text-white w3-padding-64" align="left">
 
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
-  </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
+    <!-- Internships and Orgs -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left" id="intern">
 
-<!-- END PAGE CONTENT -->
-</div>
+      <style>
+        ul {
+          list-style-type: none;
+          text-align: left;
+        }
+      </style>
+
+      <ul align="left">
+        <li><b>
+            <font size=3>Teachers Insurance and Annuity Association of America (TIAA)</font>
+          </b>, July 2019 – Sept 2023</li>
+
+        <font size=2 align="left" color='#A9A9A9'><i>The Teachers Insurance and Annuity Association of America-College
+            Retirement Equities Fund(TIAA, formerly TIAA-CREF), is a fortune 100 financial services organization that is
+            the leading provider of financial services in the academic, research, medical, cultural & governmental areas
+            in the United States</i></font><br>
+        <font size=2><b>Senior Analyst (BI Analytics and Reporting)</b><br>
+          <ul>
+            <li>• Developed reports for financial areas like Investment Management, Actuarial, Corporate Services,
+              Fraud, Anti Money Laundering,
+              etc.</li>
+            <li>
+              • Gathered requirements, conceptualized and designed reports, developed rpd (data modeling), and novel
+              dashboards using Oracle&nbsp; &nbsp;&nbsp;Business Intelligence Enterprise Edition/Oracle Analytics Cloud.
+            </li>
+            <li>
+              • Published and shared reports with the business users through OBIEE/OAC iBots, Autosys jobs, and BIP
+              Jobs.</li>
+            <li>
+              • Developed Pixel Perfect reports on BI Publisher with complex SQL queries.</li>
+            <li>
+              • Implemented drill-downs along with object-level and data-level security to restrict accesses for users.
+            </li>
+            <li>
+              • Automated processes using Python and Java, like an alternative to writeback functionality in OAC, a
+              script to compare OBIEE and &nbsp; &nbsp;&nbsp;OAC catalogs, and a workaround for 60 mins timeout issue in
+              OAC [TIAA Silver and Bronze award, May 2021]</li>
+            <li>
+              • Implemented a mechanism for detecting stale variables in OBIEE which triggered an email informing admins
+              to restart the BI
+              server&nbsp; &nbsp;&nbsp; in turn saving manual efforts for providing correct data to users through iBots.
+            </li>
+          </ul>
+        </font><br><br>
+        <li><b>
+            <font size=3>Schlumberger India Technology Center Pvt. Ltd</font>
+          </b>, March 2018 – June 2018</li>
+        <font size=2 align="left" color='#A9A9A9'><i>Schlumberger is a Fortune Global 500 oilfield services company</i>
+        </font><br>
+        <font size=2><b>BI Studio Intern</b><br>
+          <ul>
+            <li>• Primarily involved in exploring the new features of Power BI and DAX and training or sharing the
+              knowledge with the team.</li>
+            <li>• Also worked on how to connect to JSON, SharePoint, XML, REST API, etc. </li>
+          </ul>
+        </font>
+      </ul>
+    </div>
+    <div class="w3-container w3-light-grey w3-center w3-text-white w3-padding-32" align="left" id="intern">
+    </div>
+
+
+
+
+    <!-- Skills -->
+    <div class="w3-container w3-light-grey w3-center w3-text-dark-gray w3-padding-64" align="left" id="skills">
+
+      <style>
+        ul {
+          list-style-type: none;
+          text-align: left;
+        }
+      </style>
+
+      <ul align="left">
+        <li><b>
+            <font size=4>Visualization Tools</font>
+          </b></li>
+        <font size=2>Oracle Business Intelligence Enterprise Edition 12c, BI Publisher, Oracle Analytics Cloud, Oracle
+          Data Visualizer, Power BI, Excel</font>
+        <br><br>
+        <li><b>
+            <font size=4>Databases</font>
+          </b></li>
+        <font size=2> MySQL, Oracle, PostgreSQL</font>
+        <br><br>
+        <li><b>
+            <font size=4>Languages</font>
+          </b></li>
+        <font size=2>Python, SQL</font>
+        <br><br>
+        <li><b>
+            <font size=4>Libraries</font>
+          </b></li>
+        <font size=2>Flask, NumPy, Pandas, Matplotlib, Seaborn, SQL, Jpype, Jaydebeapi</font>
+        <br><br>
+        <li><b>
+            <font size=4>Platforms</font>
+          </b></li>
+        <font size=2>Anaconda, Eclipse, Jupyter notebook, Sharepoint, Pycharm</font>
+        <br><br>
+        <li><b>
+            <font size=4>Project Management Tools</font>
+          </b></li>
+        <font size=2>Jira, Confluence</font>
+        <br><br>
+      </ul>
+    </div>
+
+    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left">
+    </div>
+
+
+    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-32" align="left">
+    </div>
+
+
+
+    <!-- Projects -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left" id="projects">
+
+      <style>
+        ul {
+          list-style-type: none;
+          text-align: left;
+        }
+      </style>
+
+      <ul align="left">
+        <li><b>
+            <font size=3>Writeback in Oracle Analytics Cloud</font>
+          </b></li>
+        <font size=2><b><u>Tools & Technologies </u>- </b>
+          Python, Flask, Java, Oracle Analytics Cloud, Libraries - Jpype, Jaydebeapi
+
+          <ul>
+            <li>• OAC provides direct database data manipulation from the reports, but an unencrypted data gateway posed
+              a limitation.</li>
+            <li>
+              • To overcome this, a solution involved a Flask application on a Unix server, utilizing a Rest API from
+              OAC Go-URL to update
+              data via Jaydebeapi and Jpype library through microservices.</li>
+          </ul>
+        </font><br><br>
+        <li><b>
+            <font size=3>EDA on Haberman Cancer Survival Dataset </font>
+          </b></li>
+
+        <font size=2><b><u>Tools & Technologies </u>- </b>
+          Python, Jupyter Notebook, Libraries – Matplotlib, Pandas, Seaborn
+
+          <ul>
+            <li>• Performed Univariate analysis by plotting Histograms, PDF, CDF, Boxplot, and Violin plots, Bivariate
+              analysis using 2D
+              Scatter plots and pair plots, checked the correlation of the features, and plotted a heatmap of
+              correlation. </li>
+            <li>• Observations were made for each of the visualization and conclusions were summarized for the
+              exploration. </li>
+          </ul>
+        </font>
+        <br><br>
+        <li><b>
+            <font size=3>Rule Recommendation for Data Quality</font>
+          </b></li>
+
+        <font size=2><b><u>Tools & Technologies </u>- </b>
+          Python, Jupyter Notebook, Libraries – Jaydebeapi, Apyori
+
+
+          <ul>
+            <li>• Implemented a data profiling and rule recommendation code - depending on the frequently occurring
+              attributes of columns,
+              suggested the data quality rules for the columns using the Apriori algorithm
+
+            </li>
+
+          </ul>
+        </font>
+      </ul>
+
+    </div>
+
+    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left">
+    </div>
+
+    <!-- Contact section -->
+
+
+
+    <div class="w3-container w3-light-gray w3-center w3-text-dark-gray w3-padding-64" align="left" id="contact">
+      <style>
+        ul {
+          list-style-type: none;
+          text-align: left;
+        }
+      </style>
+
+      <div class="w3-container w3-light-gray  w3-text-dark-gray w3-padding-64" align="left"></div>
+
+
+      <ul>
+        <li>
+          <h4>Lets talk!</h4>
+        </li>
+
+        <li><i class="fa-solid fa-envelope"></i><a
+            href="mailto: vishakha160198@gmail.com">vishakha160198@gmail.com</a><br></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto: vmulik@uci.edu">vmulik@uci.edu</a></li>
+
+
+        <br>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+1-949-617-4651">+1(949)617-4651</a><br></li>
+        <br>
+
+        <li>
+          <h6>Socials</h6>
+        </li>
+        <li><a href="http://www.linkedin.com/in/vishakhamulik16"><i
+              class="fa-brands fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/mulikvi"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+      <div class="w3-container w3-light-gray  w3-text-white w3-padding-32" align="left"></div>
+    </div>
+
+
+
+    <div class="w3-black w3-center w3-padding-24"></div>
+
+    <!-- End page content -->
+
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+    </script>
+
 
 </body>
+
 </html>
