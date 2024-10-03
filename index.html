@@ -1,130 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Vishakha Mulik</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <script src="https://kit.fontawesome.com/ee9f3903cb.js" crossorigin="anonymous"></script>
-
-
-
-
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Raleway", sans-serif
-    }
-
-    .w3-third img {
-      margin-bottom: -6px;
-      opacity: 0.8;
-      cursor: pointer
-    }
-
-    .w3-third img:hover {
-      opacity: 1
-    }
-  
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/ee9f3903cb.js" crossorigin="anonymous"></script>
 </head>
+<body>
 
-<body class="w3-content" style="max-width:1600px">
-
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-    style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-    <h3 class="w3-padding-64 w3-center"><b>Vishakha Mulik</b>
-      <font size=2><br>Without data,all we have is an opinion</font>
-    </h3>
-
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding  w3-hide-large">CLOSE</a>
-    <a href="#about" onclick="w3_close()" class=" w3-bar-item w3-button">
-      <font size=2>ABOUT ME</font>
-    </a>
-    <a href="#academics" onclick="w3_close()" class="w3-bar-item w3-button">
-      <font size=2>ACADEMICS</font>
-    </a>
-    <a href="#intern" onclick="w3_close()" class="w3-bar-item w3-button">
-      <font size=2>INTERNSHIPS & ORGANIZATIONS</font>
-    </a>
-    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">
-      <font size=2>SKILLS</font>
-    </a>
-    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">
-      <font size=2>PROJECTS</font>
-    </a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">
-      <font size=2>GET IN TOUCH</font>
-    </a>
-  </nav>
-
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">Vishakha Mulik</span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-  </header>
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-    title="close side menu" id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:300px">
-
-    <!-- Push down content on small screens -->
-    <div class="w3-hide-large" style="margin-top:83px"></div>
-
-
-    <!-- About section -->
-    <div class="w3-container w3-dark-gray w3-center w3-text-light-grey w3-padding-64" id="about">
-      <img src="photo.png" alt="Me" class="w3-image w3-padding-32" width="170" height="180">
-      <div class="w3-content w3-justify" style="max-width:830px; text-align:left">
-
-        <p>While interning in 2018, coming across the term 'Business Intelligence’ made me realize that data is the new
-          language of business. I believe organizations with more data-literate people are the ones that are going to
-          succeed. Recently, listening to a TEDx talk titled ‘Relationship: Analytics and Business’ got me interested in
-          how the terms Business, Analytics, and Data are related. I am aware of the increasing usage of data and
-          analytics which will drive the future and an increasing amount of data requires smart techniques for storage.
-          There are many real-life problems that can be solved using techniques in the areas of Machine Learning,
-          Analytics, and Data. I wish to deepen my knowledge in Data Analytics, Engineering, Management and Machine
-          Learning. Along with that, I want to use my previous experience in Business Intelligence for solving business
-          and real-life problems.
-        </p>
-
-
-
-
-        <div class="w3-row-padding w3-dark-gray" style="margin:0 -16px">
-          <div class="w3-half w3-margin-bottom w3-dark-gray">
-          </div>
-
-
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <h1>Vishakha Mulik</h1>
+            <p>Without data, all we have is an opinion</p>
         </div>
-      </div>
+        <ul class="menu">
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#academics">ACADEMICS</a></li>
+            <li><a href="#internships">INTERNSHIPS & ORGANIZATIONS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">GET IN TOUCH</a></li>
+        </ul>
     </div>
 
+    <!-- Main content area -->
+    <div class="content">
+        <!-- About section -->
+        <section id="about" class="section dark">
+         <img src="photo.png" alt="Profile Picture" width="170" height="180">
+           <br><br> <p>While interning in 2018, coming across the term 'Business Intelligence’ made me realize that data is the new language of business. I believe organizations with more data-literate people are the ones that are going to succeed. Recently, listening to a TEDx talk titled ‘Relationship: Analytics and Business’ got me interested in how the terms Business, Analytics, and Data are related. I am aware of the increasing usage of data and analytics which will drive the future and an increasing amount of data requires smart techniques for storage. There are many real-life problems that can be solved using techniques in the areas of Machine Learning, Analytics, and Data. I wish to deepen my knowledge in Data Analytics, Engineering, Management and Machine Learning. Along with that, I want to use my previous experience in Business Intelligence for solving business and real-life problems.</p>
+            
+        </section>
 
-
-
-
-
-
-    <!-- Academics -->
-    <div class="w3-container w3-light-gray w3-center w3-text-dark-gray w3-padding-64" align="left" id="academics">
-
-      <style>
+        <!-- Academics section -->
+        <section id="academics" class="section light">
+           
+            <p>  <style>
         ul {
           list-style-type: none;
           text-align: left;
@@ -133,293 +46,262 @@
 
       <ul align="left">
         <li><b>
-            <font size=4>MASTER OF COMPUTER SCIENCE (MCS)</font>
+            <font size=5 font-family: 'Calibri', sans-serif>MASTER OF COMPUTER SCIENCE (MCS)</font>
           </b></li>
-        <font size=2 align="left">University of California-Irvine,Dec 2024</font><br>
-        <font size=2><b><u>Coursework:</u></b><br>
-          Big Data Management(CSCI 224P), Artificial Intelligence(CSCI 271P) ,
-          <br>Advanced Programming and Problem Solving(CSCI 253P)
+        <font size=3 align="left">University of California-Irvine,Dec 2024</font><br>
+<font size=3><b>GPA:</b> 3.89/4</font><br>
+        <font size=3><b><u>Coursework:</u></b><br>
+<li>COMPSCI 224P : Big Data Management</li>
+<li>COMPSCI 253P : Advanced Programming and Problem Solving</li>
+<li>COMPSCI 261P : Data Structures</li>
+<li>COMPSCI 271P : Artificial Intelligence</li>
+<li>COMPSCI 273P : Machine Learning and Data Mining</li>
+<li>COMPSCI 275P : Graphical Models and Statistical Learning</li>
+<li>COMPSCI 238P : Operating Systems </li>
+<li>COMPSCI 220P : Databases</li>
+<li>COMPSCI 244P : Internet of Things
         </font>
 
 
         <li><b><br><br><br>
-            <font size=4>BACHELOR OF ENGINEERING (BE),COMPUTERS</font>
+            <font size=5>BACHELOR OF ENGINEERING (BE),COMPUTERS</font>
           </b></li>
-        <font size=2>University of Pune,June 2019 (Department Topper)</font><br>
-        <font size=2><b>GPA:</b> 9.12/10</font><br>
+        <font size=3>University of Pune,June 2019 (Department Topper)</font><br>
+        <font size=3><b>GPA:</b> 9.12/10</font><br>
 
-        <font size=2><b><u>Coursework:</u></b><br>
-          Artificial Intelligence & Robotics, Business Intelligence, <br>Data Analytics, Database Management
-          Systems,<br> Data Mining and Warehousing, Data Structures & Algorithms, <br>Machine Learning, Object Oriented
-          Programming<br></font>
+        <font size=3><b><u>Coursework:</u></b><br>
+          <li>Artificial Intelligence & Robotics</li><li> Business Intelligence </li><li>Data Analytics </li><li>Database Management
+          Systems</li><li> Data Mining and Warehousing</li><li> Data Structures & Algorithms</li><li>Machine Learning</li><li>Object Oriented
+          Programming</li><br></font>
       </ul>
-    </div>
+    </p>
+        </section>
 
-    <div class="w3-container w3-light-grey w3-center w3-text-white w3-padding-64" align="left">
+        <!-- Internships & Organizations section -->
+        <section id="internships" class="section dark">
+                        <p> 
 
-    </div>
 
-
-
-    <!-- Internships and Orgs -->
-    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left" id="intern">
-
-      <style>
-        ul {
-          list-style-type: none;
-          text-align: left;
-        }
-      </style>
-
-      <ul align="left">
+      <ul >
         <li><b>
-            <font size=3>Teachers Insurance and Annuity Association of America (TIAA)</font>
+            <font size=6>Teachers Insurance and Annuity Association of America (TIAA)</font>
           </b>, July 2019 – Sept 2023</li>
 
-        <font size=2 align="left" color='#A9A9A9'><i>The Teachers Insurance and Annuity Association of America-College
+        <font size=3  color='#A9A9A9'><i>The Teachers Insurance and Annuity Association of America-College
             Retirement Equities Fund(TIAA, formerly TIAA-CREF), is a fortune 100 financial services organization that is
             the leading provider of financial services in the academic, research, medical, cultural & governmental areas
-            in the United States</i></font><br>
-        <font size=2><b>Senior Analyst (BI Analytics and Reporting)</b><br>
-          <ul>
-            <li>• Developed reports for financial areas like Investment Management, Actuarial, Corporate Services,
-              Fraud, Anti Money Laundering,
-              etc.</li>
+            in the United States</i></font><br><br>
+        <font size=5><b>Senior Analyst (BI Analytics and Reporting)</b><br></font><font size=3>
+          <ul style="list-style-type:disc">
+            <li>Awarded TIAA Quarterly Silver Award for improving the cloud migration efficiency bydeveloping an alternative writeback 
+              functionality on Oracle Analytics Cloud using Python, Flask, and Go URL, enabling users to input data directly into the 
+              database from dashboards</li>
             <li>
-              • Gathered requirements, conceptualized and designed reports, developed rpd (data modeling), and novel
-              dashboards using Oracle&nbsp; &nbsp;&nbsp;Business Intelligence Enterprise Edition/Oracle Analytics Cloud.
+              Implemented an automatic detection mechanism for stale variables, eliminating 200+ hours of manual effort, and ensuring 
+              accurate data publishing and distribution using OBIEE/OAC iBots
             </li>
             <li>
-              • Published and shared reports with the business users through OBIEE/OAC iBots, Autosys jobs, and BIP
-              Jobs.</li>
+              Implemented Power BI dashboard to automate count validation across 50+ sources, ensuring timely discrepancy 
+notifications and achieving a 100% automation and complete elimination of manual processes</li>
             <li>
-              • Developed Pixel Perfect reports on BI Publisher with complex SQL queries.</li>
+              Developed 25+ scalable financial dashboards and led end-to-end report development using Oracle BI/Oracle Analytics 
+Cloud, Tableau, and Power BI, resulting in streamlined data modeling and dashboard creation with complex SQL queries for 
+Portfolio managers, Actuaries, Risk investigators, Fraud, etc</li>
             <li>
-              • Implemented drill-downs along with object-level and data-level security to restrict accesses for users.
+              Identified, analyzed, and interpreted trends and patterns in complex datasets using Tableau, providing usage insights needed 
+by corporate services and stakeholders for infrastructure occupancy reports
             </li>
             <li>
-              • Automated processes using Python and Java, like an alternative to writeback functionality in OAC, a
-              script to compare OBIEE and &nbsp; &nbsp;&nbsp;OAC catalogs, and a workaround for 60 mins timeout issue in
-              OAC [TIAA Silver and Bronze award, May 2021]</li>
+              Implemented drill-down, drill through features, KPIs along with object-level and data-level security for role-based access for 
+              100+ users, supporting business and customer needs effectively
+              </li>
             <li>
-              • Implemented a mechanism for detecting stale variables in OBIEE which triggered an email informing admins
-              to restart the BI
-              server&nbsp; &nbsp;&nbsp; in turn saving manual efforts for providing correct data to users through iBots.
+              Improved report efficiency by reinforcing SQL queries for actuarial reporting using Oracle procedures and functions, reducing 
+              execution time by 40+%
             </li>
           </ul>
-        </font><br><br>
+        </font><br><br><br><br>
         <li><b>
-            <font size=3>Schlumberger India Technology Center Pvt. Ltd</font>
+            <font size=6>Schlumberger India Technology Center Pvt. Ltd</font>
           </b>, March 2018 – June 2018</li>
-        <font size=2 align="left" color='#A9A9A9'><i>Schlumberger is a Fortune Global 500 oilfield services company</i>
-        </font><br>
-        <font size=2><b>BI Studio Intern</b><br>
-          <ul>
-            <li>• Primarily involved in exploring the new features of Power BI and DAX and training or sharing the
-              knowledge with the team.</li>
-            <li>• Also worked on how to connect to JSON, SharePoint, XML, REST API, etc. </li>
-          </ul>
-        </font>
-      </ul>
-    </div>
-    <div class="w3-container w3-light-grey w3-center w3-text-white w3-padding-32" align="left" id="intern">
-    </div>
-
-
-
-
-    <!-- Skills -->
-    <div class="w3-container w3-light-grey w3-center w3-text-dark-gray w3-padding-64" align="left" id="skills">
-
-      <style>
-        ul {
-          list-style-type: none;
-          text-align: left;
-        }
-      </style>
-
-      <ul align="left">
-        <li><b>
-            <font size=4>Visualization Tools</font>
-          </b></li>
-        <font size=2>Oracle Business Intelligence Enterprise Edition 12c, BI Publisher, Oracle Analytics Cloud, Oracle
-          Data Visualizer, Power BI, Excel</font>
-        <br><br>
-        <li><b>
-            <font size=4>Databases</font>
-          </b></li>
-        <font size=2> MySQL, Oracle, PostgreSQL</font>
-        <br><br>
-        <li><b>
-            <font size=4>Languages</font>
-          </b></li>
-        <font size=2>Python, SQL</font>
-        <br><br>
-        <li><b>
-            <font size=4>Libraries</font>
-          </b></li>
-        <font size=2>Flask, NumPy, Pandas, Matplotlib, Seaborn, SQL, Jpype, Jaydebeapi</font>
-        <br><br>
-        <li><b>
-            <font size=4>Platforms</font>
-          </b></li>
-        <font size=2>Anaconda, Eclipse, Jupyter notebook, Sharepoint, Pycharm</font>
-        <br><br>
-        <li><b>
-            <font size=4>Project Management Tools</font>
-          </b></li>
-        <font size=2>Jira, Confluence</font>
-        <br><br>
-      </ul>
-    </div>
-
-    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left">
-    </div>
-
-
-    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-32" align="left">
-    </div>
-
-
-
-    <!-- Projects -->
-    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left" id="projects">
-
-      <style>
-        ul {
-          list-style-type: none;
-          text-align: left;
-        }
-      </style>
-
-      <ul align="left">
-        <li><b>
-            <font size=3>Writeback in Oracle Analytics Cloud</font>
-          </b></li>
-        <font size=2><b><u>Tools & Technologies </u>- </b>
-          Python, Flask, Java, Oracle Analytics Cloud, Libraries - Jpype, Jaydebeapi
-
-          <ul>
-            <li>• OAC provides direct database data manipulation from the reports, but an unencrypted data gateway posed
-              a limitation.</li>
-            <li>
-              • To overcome this, a solution involved a Flask application on a Unix server, utilizing a Rest API from
-              OAC Go-URL to update
-              data via Jaydebeapi and Jpype library through microservices.</li>
-          </ul>
+        <font size=3 align="left" color='#A9A9A9'><i>Schlumberger is a Fortune Global 500 oilfield services company</i>
         </font><br><br>
-        <li><b>
-            <font size=3>EDA on Haberman Cancer Survival Dataset </font>
-          </b></li>
-	
-        <font size=2><b><u>Tools & Technologies </u>- </b>
-          Python, Jupyter Notebook, Libraries – Matplotlib, Pandas, Seaborn, Numpy
-
-          <ul>
-            <li>• Performed Univariate analysis by plotting Histograms, PDF, CDF, Boxplot, and Violin plots, Bivariate
-              analysis using 2D
-              Scatter plots and pair plots, checked the correlation of the features, and plotted a heatmap of
-              correlation. </li>
-            <li>• Observations were made for each of the visualization and conclusions were summarized for the
-              exploration. </li>
-<li><u><a href="https://github.com/mulikvi/habermandata_eda">Read more</a></u></li>
+        <font size=5><b>Business Intelligence Studio Intern</b><br></font><font size=3>
+          <ul style="list-style-type:disc">
+            <li>Replicated 5+ dashboards from Oracle Business Intelligence (OBI) to Power BI as part of the migration process from OBI to 
+              Power BI
+              </li>
+            <li>Conducted competitive analysis and implemented POCs for Power BI features like incremental refresh, role-based access,
+              DAX functions, connection to JSON, SharePoint, XML, REST API, etc. and training or sharing the knowledge with the team </li>
           </ul>
         </font>
-        <br><br>
-        <li><b>
-            <font size=3>Rule Recommendation for Data Quality</font>
-          </b></li>
+      </ul></p>
+        </section>
 
-        <font size=2><b><u>Tools & Technologies </u>- </b>
-          Python, Jupyter Notebook, Libraries – Jaydebeapi, Apyori
+        <!-- Skills section -->
+        <section id="skills" class="section light">
+           
+            <p> <style>
+              ul {
+                list-style-type: none;
+                text-align: left;
+              }
+            </style>
+      
+            <ul align="left">
+              <li><b>
+                  <font size=5>Data Visualization</font>
+                </b></li>
+              <font size=3>Oracle Business Intelligence Enterprise Edition 12c, BI Publisher, Oracle Analytics Cloud, Oracle
+                Data Visualizer, Power BI, Tableau, MS Excel</font>
+              <br><br>
+              <li><b>
+                  <font size=5>Databases/ETL Tools</font>
+                </b></li>
+              <font size=3> Oracle, MySQL, PostgreSQL, Neo4J, Mongodb, Cassandra, Alteryx, Snowflake</font>
+              <br><br>
+              <li><b>
+                  <font size=5>Languages</font>
+                </b></li>
+              <font size=3>Python, SQL, PySpark</font>
+              <br><br>
+              <li><b>
+                <font size=5>Machine Learning</font>
+              </b></li>
+            <font size=3>KNN, Naive Bayes, Decision Trees, Regression, Kmeans, Gradient Descent</font>
+            <br><br>
+              <li><b>
+                  <font size=5>Libraries</font>
+                </b></li>
+              <font size=3>Flask, NumPy, Pandas, Matplotlib, Seaborn, SQL, Jpype, Jaydebeapi</font>
+              <br><br>
+              <li><b>
+                  <font size=5>Platforms</font>
+                </b></li>
+              <font size=3>Anaconda, Eclipse, Jupyter notebook, Sharepoint, Pycharm</font>
+              <br><br>
+              <li><b>
+                  <font size=5>Project Management Tools</font>
+                </b></li>
+              <font size=3>Jira, Confluence</font>
+              <br><br>
+            </ul></p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="section dark">
+       
+            <p>
+              <style>
+                ul {
+                  list-style-type: none;
+                  text-align: left;
+                }
+              </style>
+        
+              <ul align="left">
+                <li><b>
+                    <font size=6>Writeback in Oracle Analytics Cloud</font>
+                  </b></li>
+                <font size=3><b><u>Tools & Technologies </u>- </b>
+                  Python, Flask, Java, Oracle Analytics Cloud, Libraries - Jpype, Jaydebeapi
+        
+                  <ul>
+                    <li>• OAC provides direct database data manipulation from the reports, but an unencrypted data gateway posed
+                      a limitation.</li>
+                    <li>
+                      • To overcome this, a solution involved a Flask application on a Unix server, utilizing a Rest API from
+                      OAC Go-URL to update
+                      data via Jaydebeapi and Jpype library through microservices.</li>
+                  </ul>
+                </font><br><br>
+                <li><b>
+                    <font size=6>EDA on Haberman Cancer Survival Dataset </font>
+                  </b></li>
+          
+                <font size=3><b><u>Tools & Technologies </u>- </b>
+                  Python, Jupyter Notebook, Libraries – Matplotlib, Pandas, Seaborn, Numpy
+        
+                  <ul>
+                    <li>• Performed Univariate analysis by plotting Histograms, PDF, CDF, Boxplot, and Violin plots, Bivariate
+                      analysis using 2D
+                      Scatter plots and pair plots, checked the correlation of the features, and plotted a heatmap of
+                      correlation. </li>
+                    <li>• Observations were made for each of the visualization and conclusions were summarized for the
+                      exploration. </li>
+        <li><u><a href="https://github.com/mulikvi/habermandata_eda">Read more</a></u></li>
+                  </ul>
+                </font>
+                <br><br>
+                <li><b>
+                    <font size=6>Rule Recommendation for Data Quality</font>
+                  </b></li>
+        
+                <font size=3><b><u>Tools & Technologies </u>- </b>
+                  Python, Jupyter Notebook, Libraries – Jaydebeapi, Apyori
+        
+        
+                  <ul>
+                    <li>• Implemented a data profiling and rule recommendation code - depending on the frequently occurring
+                      attributes of columns,
+                      suggested the data quality rules for the columns using the Apriori algorithm
+        
+                    </li>
+        
+                  </ul>
+                </font>
+              </ul>
 
 
-          <ul>
-            <li>• Implemented a data profiling and rule recommendation code - depending on the frequently occurring
-              attributes of columns,
-              suggested the data quality rules for the columns using the Apriori algorithm
 
-            </li>
+            </p>
+        </section>
 
-          </ul>
-        </font>
-      </ul>
+        <!-- Contact section -->
+        <section id="contact" class="section light">
+          <style>
+            ul {
+              list-style-type: none;
+              text-align: left;
+            }
 
+
+            a {
+    color: black;
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+a:hover {
+    color: #333; /* Optional: hover color if you want a slight effect when hovering */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+          </style>
+           
+            <p>     <ul>
+              <li>
+                <font size="6">Lets talk!</font><br><br>
+              </li>
+      
+              <li><i class="fa-solid fa-envelope"></i><a
+                  href="mailto: vishakha160198@gmail.com">vishakha160198@gmail.com</a><br></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto: vmulik@uci.edu">vmulik@uci.edu</a></li>
+      
+      
+              <br>
+              <li><i class="fa-solid fa-phone"></i><a href="tel:+1-949-617-4651">+1(949)617-4651</a><br></li>
+              <br>
+      
+              <li>
+                <h3>Socials</h3>
+              </li>
+              <li><a href="http://www.linkedin.com/in/vishakhamulik16"><i
+                    class="fa-brands fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/mulikvi"><i class="fa-brands fa-github"></i></a>
+              </li>
+            </ul>.</p>
+        </section>
     </div>
 
-    <div class="w3-container w3-dark-grey w3-center w3-text-white w3-padding-64" align="left">
-    </div>
-
-    <!-- Contact section -->
-
-
-
-    <div class="w3-container w3-light-gray w3-center w3-text-dark-gray w3-padding-64" align="left" id="contact">
-      <style>
-        ul {
-          list-style-type: none;
-          text-align: left;
-        }
-      </style>
-
-      <div class="w3-container w3-light-gray  w3-text-dark-gray w3-padding-64" align="left"></div>
-
-
-      <ul>
-        <li>
-          <h4>Lets talk!</h4>
-        </li>
-
-        <li><i class="fa-solid fa-envelope"></i><a
-            href="mailto: vishakha160198@gmail.com">vishakha160198@gmail.com</a><br></li>
-        <li><i class="fa-solid fa-envelope"></i><a href="mailto: vmulik@uci.edu">vmulik@uci.edu</a></li>
-
-
-        <br>
-        <li><i class="fa-solid fa-phone"></i><a href="tel:+1-949-617-4651">+1(949)617-4651</a><br></li>
-        <br>
-
-        <li>
-          <h6>Socials</h6>
-        </li>
-        <li><a href="http://www.linkedin.com/in/vishakhamulik16"><i
-              class="fa-brands fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/mulikvi"><i class="fa-brands fa-github"></i></a>
-        </li>
-      </ul>
-      <div class="w3-container w3-light-gray  w3-text-white w3-padding-32" align="left"></div>
-    </div>
-
-
-
-    <div class="w3-black w3-center w3-padding-24"></div>
-
-    <!-- End page content -->
-
-
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
-
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-
-    </script>
-
-
+    <script src="script.js"></script>
 </body>
-
 </html>
