@@ -201,18 +201,19 @@ by corporate services and stakeholders for infrastructure occupancy reports
         
               <ul align="left">
                 <li><b>
-                    <font size=3>Writeback in Oracle Analytics Cloud</font>
+                    <font size=3>RideWise: Optimizing NYC Taxi Demand Forecasts</font>
                   </b></li>
                 <font size=2><b><u>Tools & Technologies </u>- </b>
-                  Python, Flask, Java, Oracle Analytics Cloud, Libraries - Jpype, Jaydebeapi
+                  Python, Dask, NumPy, Pandas, Sk-learn, Matplotlib, Fourier Transforms, Folium 
         
                   <ul>
-                    <li>• OAC provides direct database data manipulation from the reports, but an unencrypted data gateway posed
-                      a limitation.</li>
+                    <li>• Developed a machine learning pipeline to predict taxi demand in New York City, processing over 10 million rows of data with 
+                      Dask for scalable computations utilizing advanced data cleaning, time-series analysis, and regression models (Linear 
+                      Regression, Random Forest, and XGBoost) to optimize predictions</li>
                     <li>
-                      • To overcome this, a solution involved a Flask application on a Unix server, utilizing a Rest API from
-                      OAC Go-URL to update
-                      data via Jaydebeapi and Jpype library through microservices.</li>
+                      • Achieved a test Mean Absolute Percentage Error of 12.6% using XGBoost regression and improved performance through 
+                      exponential moving averages, time-series smoothing, clustering, and advanced feature engineering</li>
+                      <li><u><a href="https://github.com/mulikvi/nyc_taxi_demand">Read more</a></u></li>
                   </ul>
                 </font><br><br>
                 <li><b>
@@ -233,19 +234,24 @@ by corporate services and stakeholders for infrastructure occupancy reports
                 </font>
                 <br><br>
                 <li><b>
-                    <font size=3>Rule Recommendation for Data Quality</font>
+                    <font size=3>Cuisine Compass</font>
                   </b></li>
         
                 <font size=2><b><u>Tools & Technologies </u>- </b>
-                  Python, Jupyter Notebook, Libraries – Jaydebeapi, Apyori
+                  Python, SQL, Airflow, BigQuery, LangChain, Tableau, GCP, KNN (K-Nearest Neighbor) 
         
         
                   <ul>
-                    <li>• Implemented a data profiling and rule recommendation code - depending on the frequently occurring
-                      attributes of columns,
-                      suggested the data quality rules for the columns using the Apriori algorithm
+                    <li>• Developed an ETL pipeline to monitor and analyze recipes from Reddit ,integrating Python and OpenAI for title parsing 
         
                     </li>
+                    <li>• ELT batch pipeline to load recipe, nutrition’s, and reviews from Food.com; data warehouse using star schema in BigQuery
+        
+                    </li>
+                    <li>• Created a Tableau dashboard to display last 7 days’ trending recipes from Reddit, offering features to find recipes based on 
+                      nutritional values and to recommend similar recipes using KNN (K-Nearest Neighbor)
+                    </li>
+                    <li><u><a href="https://github.com/mulikvi/culinary_trends/tree/main">Read more</a></u></li>
         
                   </ul>
                 </font>
